@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+    
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Currency Converter</div>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <form id="currency-form" action="/action.php" method="get">
+            <h2>Choose a Currency to Convert</h2>
+            <!-- <textarea cols="20" name="comments" rows="5">Comment</textarea><br /> -->
+            <label for="amount">Choose an Amount :</label>
+            <input type="number" id="amount" name="quantity" min="1" max="1000">
+            <label for="currency">Choose a Currency :</label>
+            <select id="base-currency" name="currency">
+                <option value="INR">Indian Rupee</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro</option>
+            </select>
+            <label for="convert">Convert into :</label>
+            <select id="target-currency" name="currency">
+                <option value="INR">Indian Rupee</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro</option>
+            </select>
+            <!-- <label><input name="terms" type="checkbox" value="tandc" />Accept terms</label> <br /> -->
+            
+            <!-- <input type="submit" value="Submit" /> -->
+            <button class="btn" type="submit">Submit</button>
+        </form>
+
+        <div class="output">
+            <h2>Converted Value is :</h2>
+            <h3 id="conversion-result"></h3>
+            
+            <!-- <h2>{currency} currency.value is equal to {convert} convert.value</h2> -->
+            <!-- <table>
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Currency Code</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table> -->
+        </div>
+
+    </div>
+
+    <footer>
+        Copyright &copy; All rights reserved
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- <script src="script2.js"></script> -->
+
+</body>
+
+</html>
